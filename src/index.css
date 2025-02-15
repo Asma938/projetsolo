@@ -1,0 +1,90 @@
+/* Importation de Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styles généraux */
+body {
+  transition: background 0.3s ease;
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+/* Dark mode activé */
+.dark body {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #111;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: gray;
+}
+
+/* Bouton Télécharger CV */
+.download-btn {
+  background-color: #007bff;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Icône GitHub */
+.github-icon {
+  color: white;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.github-icon:hover {
+  color: gray;
+}
+
+/* Contenu centré */
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+}
+
+/* Effet sur les projets */
+.project-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Bouton retour en haut */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-to-top:hover {
+  background-color: #0056b3;
+}
